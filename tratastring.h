@@ -7,7 +7,7 @@
  * @author	Everton Cavalcante (everton@dimap.ufrn.br)
  * @author	Silvio Sampaio (silviocs@imd.ufrn.br)
  * @since	18/03/2017
- * @date	18/03/2017
+ * @date	11/05/2017
  */
 
 #ifndef TRATA_STRING_H
@@ -16,16 +16,6 @@
 #include <string>
 using std::string;
 
-
-/**
- * @brief Funcao recursiva que verifica se uma palavra ou frase e palindromo
- * @param s Palavra ou frase em questao
- * @return Verdadeiro (true), se a palavra/frase e um palindromo, 
- *		   falso (false) caso contrario
- */
-bool Palindromo(string s);
-
-bool isPalindromo(string s);
 
 /**
  * @brief Funcao que converte todos os caracteres para letra minuscula

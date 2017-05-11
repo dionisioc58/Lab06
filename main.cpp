@@ -22,8 +22,8 @@ int main() {
         teste2 += pilha.Pop();
 
     if (teste == teste2)
-        cout << "'" << palavra << "' é palíndrome!" << endl;
+        cout << "'" << palavra << "' é palíndromo!" << endl;
     else
-        cout << "'" << palavra << "' NÃO é palíndrome!" << endl;
+        cout << "'" << palavra << "' NÃO é palíndromo!" << endl;
     return 0;
 }

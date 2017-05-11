@@ -7,7 +7,7 @@
  * @author	Everton Cavalcante (everton@dimap.ufrn.br)
  * @author	Silvio Sampaio (silviocs@imd.ufrn.br)
  * @since	18/03/2017
- * @date	18/03/2017
+ * @date	11/05/2017
  * @sa		tratastring.h
  */
 
@@ -24,7 +24,6 @@ using std::endl;
 using std::string;
 
 #include "tratastring.h"
-
 
 /**
  * @brief Funcao que converte todos os caracteres para letra minuscula
@@ -65,6 +64,21 @@ void remove_pontuacao(string& s) {
 }
 
 /**
+ * @brief Função que remove acentuações de uma string
+ * @param s String com acentuações a remover
+ */
+void remove_acentos(string &s) {
+	string acentos = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ";
+    string substit = "AAAAAAECEEEEIIIIDNOOOOOx0UUUUYPsaaaaaaeceeeeiiiiOnooooo/0uuuuypy";
+    for(unsigned int j = 0; j < acentos.length(); j++) {
+		int find = s.find(acentos.substr(j, 1));
+		if(find >= 0)
+			s.replace(find, 1, substit.substr(j, 1));
+	}
+		//s.replace(s.begin(), s.end(), acentos.substr(j, 1), substit.substr(j, 1)); 
+}
+
+/**
  * @brief Funcao que trata uma string, removendo espacos em branco
  * @param s String a ser tratada
  */
@@ -72,30 +86,5 @@ void tratar_string(string& s) {
 	minusculas(s);			// Conversao da string para minusculas
 	remove_espacos(s);		// Remocao de espacos
 	remove_pontuacao(s);	// Remocao de pontuacao
-}
-
-/**
- * @brief Funcao recursiva que verifica se uma palavra ou frase e palindromo
- * @param s Palavra ou frase em questao
- * @return Verdadeiro, se a palavra/frase e um palindromo ou falso, caso contrario
- */
-bool Palindromo(string s) {
-	int tam = s.length();		// Tamanho da string
-	if (tam <= 1) {				// Caso base: string de tamanho zero ou um
-		return true;
-	} else {
-		if (s[0] != s[tam-1]) {
-			return false;		// Primeira e ultima letras da string sao diferentes
-		}
-	} 
-
-	// Chamada recursiva:
-	// verifica restante da string excluindo primeira e ultima letras
-	return Palindromo(s.substr(1, tam-2));
-}
-
-bool isPalindromo(string s) {
-	string ss = s;
-	tratar_string(ss);
-	return Palindromo(ss);
+	remove_acentos(s);
 }
