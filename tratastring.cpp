@@ -67,15 +67,22 @@ void remove_pontuacao(string& s) {
  * @brief Função que remove acentuações de uma string
  * @param s String com acentuações a remover
  */
-void remove_acentos(string &s) {
-	string acentos = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ";
-    string substit = "AAAAAAECEEEEIIIIDNOOOOOx0UUUUYPsaaaaaaeceeeeiiiiOnooooo/0uuuuypy";
-    for(unsigned int j = 0; j < acentos.length(); j++) {
-		int find = s.find(acentos.substr(j, 1));
-		if(find >= 0)
-			s.replace(find, 1, substit.substr(j, 1));
-	}
-		//s.replace(s.begin(), s.end(), acentos.substr(j, 1), substit.substr(j, 1)); 
+void remove_acentos (string &s) {
+    string com_acento = "âÂàÀáÁãÃêÊèÈéÉẽẼîÎìÌíÍõÕôÔòÒóÓüÜûÛúÚùÙçÇ";
+    string sem_acento = "aAaAaAaAeEeEeEeEiIiIiIoOoOoOoOuUuUuUuUcC";
+    int temp = com_acento.length();
+    for (int ii = 0; s[ii] != '\0'; ii++) {
+        int kk = 0;
+        for (int jj = 0; jj < temp; jj += 2) {
+            if ((s[ii] == com_acento[jj]) && (s[ii + 1] == com_acento[jj + 1])) {   
+                s[ii] = sem_acento[kk];
+                s.erase((ii + 1), 1);
+                ii += 1;
+                break;
+            }
+            kk++;
+        }
+    }
 }
 
 /**
