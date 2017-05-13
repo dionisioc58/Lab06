@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Laboratorio 6: Código-Fonte de include/bancodados.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio 6
+   </div>
+   <div id="projectbrief">Laboratório 6 de Linguagem de Programação I</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bancodados.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bancodados_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BANCODADOS_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #define BANCODADOS_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">using</span> std::cin;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">using</span> std::cout;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">using</span> std::endl;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">using</span> std::ifstream;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">using</span> std::ofstream;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #include &lt;string&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="empresa_8h.html">empresa.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="funcoes_8h.html">funcoes.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#ae05e3df239e882ff5f4d3cde5062bfaf">inputEmpresa</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classFuncionario.html">Funcionario</a> *<a class="code" href="bancodados_8h.html#adc7875fefa77e8da976f4c585d88573a">inputFuncionario</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="bancodados_8h.html#ab783f7890ff663f26c93c368513e9b7c">existeEmpresa</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n, <a class="code" href="classEmpresa.html">Empresa</a> *nova);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a64c3353235925898ed784497597f22dd">cadEmpresa</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> &amp;n);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a5a67a04aa94a8d727201ce96a8930705">delEmpresa</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> &amp;n);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a195ecf21ddacb53155da071ce4476ca5">addFunc</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a55ccd7ae599772173abd30d3a7ac9e95">addFuncArq</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n, <span class="keywordtype">bool</span> pausa = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a429f207949e9fec144c3bcb9186810a4">delFunc</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#ae7fe571658d456daf009d5f049ba0a52">aumento</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="bancodados_8h.html#a0897c03420afb2a6766eb1111a16149f">impEmpresas</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n, <span class="keywordtype">bool</span> pausa = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="bancodados_8h.html#aff8ff4e2caed4a0017b8cc8b3a2876f1">impFunc</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n, <span class="keywordtype">bool</span> all = <span class="keyword">true</span>, <span class="keywordtype">bool</span> pausa = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="bancodados_8h.html#a652467fd99772a1af57d04fe85db8a68">impFuncExp</a>(<a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n, <span class="keywordtype">bool</span> pausa);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="bancodados_8h.html#a23e571bc755081d003ab44824ef6f55e">salvarBD</a>(<span class="keywordtype">string</span> nome, <a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classEmpresa.html">Empresa</a> *<a class="code" href="bancodados_8h.html#a1dcc8df7c7f52b48190c07495527688a">abrirBD</a>(<span class="keywordtype">string</span> nome, <a class="code" href="classEmpresa.html">Empresa</a> *e, <span class="keywordtype">int</span> &amp;n);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="bancodados_8h_html_ab783f7890ff663f26c93c368513e9b7c"><div class="ttname"><a href="bancodados_8h.html#ab783f7890ff663f26c93c368513e9b7c">existeEmpresa</a></div><div class="ttdeci">bool existeEmpresa(Empresa *e, int n, Empresa *nova)</div><div class="ttdoc">Função que verifica se uma empresa já existe no cadastro. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:63</div></div>
+<div class="ttc" id="bancodados_8h_html_ae7fe571658d456daf009d5f049ba0a52"><div class="ttname"><a href="bancodados_8h.html#ae7fe571658d456daf009d5f049ba0a52">aumento</a></div><div class="ttdeci">Empresa * aumento(Empresa *e, int n)</div><div class="ttdoc">Função que solicita um valor (percentual) e uma empresa (apresenta escolha) para dar um aumento à tod...</div><div class="ttdef"><b>Definition:</b> bancodados.cpp:244</div></div>
+<div class="ttc" id="bancodados_8h_html_a55ccd7ae599772173abd30d3a7ac9e95"><div class="ttname"><a href="bancodados_8h.html#a55ccd7ae599772173abd30d3a7ac9e95">addFuncArq</a></div><div class="ttdeci">Empresa * addFuncArq(Empresa *e, int n, bool pausa=true)</div><div class="ttdoc">Função que adiciona funcionários à uma empresa (apresenta escolha), carregando-os apartir de um arqui...</div><div class="ttdef"><b>Definition:</b> bancodados.cpp:172</div></div>
+<div class="ttc" id="classEmpresa_html"><div class="ttname"><a href="classEmpresa.html">Empresa</a></div><div class="ttdoc">Classe que representa uma empresa. </div><div class="ttdef"><b>Definition:</b> empresa.h:25</div></div>
+<div class="ttc" id="funcoes_8h_html"><div class="ttname"><a href="funcoes_8h.html">funcoes.h</a></div><div class="ttdoc">Arquivo de cabeçalho com a definição de funções auxiliares para a entrada de dados. </div></div>
+<div class="ttc" id="bancodados_8h_html_a0897c03420afb2a6766eb1111a16149f"><div class="ttname"><a href="bancodados_8h.html#a0897c03420afb2a6766eb1111a16149f">impEmpresas</a></div><div class="ttdeci">void impEmpresas(Empresa *e, int n, bool pausa=true)</div><div class="ttdoc">Função que imprime as empresas no cadastro. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:269</div></div>
+<div class="ttc" id="bancodados_8h_html_a429f207949e9fec144c3bcb9186810a4"><div class="ttname"><a href="bancodados_8h.html#a429f207949e9fec144c3bcb9186810a4">delFunc</a></div><div class="ttdeci">Empresa * delFunc(Empresa *e, int n)</div><div class="ttdoc">Função que remove um funcionário de uma empresa (apresenta escolha) </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:222</div></div>
+<div class="ttc" id="bancodados_8h_html_ae05e3df239e882ff5f4d3cde5062bfaf"><div class="ttname"><a href="bancodados_8h.html#ae05e3df239e882ff5f4d3cde5062bfaf">inputEmpresa</a></div><div class="ttdeci">Empresa * inputEmpresa()</div><div class="ttdoc">Função que coleta os dados para cadastro de uma empresa. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:15</div></div>
+<div class="ttc" id="bancodados_8h_html_a23e571bc755081d003ab44824ef6f55e"><div class="ttname"><a href="bancodados_8h.html#a23e571bc755081d003ab44824ef6f55e">salvarBD</a></div><div class="ttdeci">void salvarBD(string nome, Empresa *e, int n)</div><div class="ttdoc">Função que salva o cadastro completo em arquivo. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:381</div></div>
+<div class="ttc" id="bancodados_8h_html_a652467fd99772a1af57d04fe85db8a68"><div class="ttname"><a href="bancodados_8h.html#a652467fd99772a1af57d04fe85db8a68">impFuncExp</a></div><div class="ttdeci">int impFuncExp(Empresa *e, int n, bool pausa)</div><div class="ttdoc">Função que imprime a lista de funcionários em experiência de uma empresa (apresenta escolha) ...</div><div class="ttdef"><b>Definition:</b> bancodados.cpp:344</div></div>
+<div class="ttc" id="bancodados_8h_html_aff8ff4e2caed4a0017b8cc8b3a2876f1"><div class="ttname"><a href="bancodados_8h.html#aff8ff4e2caed4a0017b8cc8b3a2876f1">impFunc</a></div><div class="ttdeci">int impFunc(Empresa *e, int n, bool all=true, bool pausa=true)</div><div class="ttdoc">Função que imprime a lista de funcionários de uma ou todas as empresas do cadastro. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:291</div></div>
+<div class="ttc" id="bancodados_8h_html_a195ecf21ddacb53155da071ce4476ca5"><div class="ttname"><a href="bancodados_8h.html#a195ecf21ddacb53155da071ce4476ca5">addFunc</a></div><div class="ttdeci">Empresa * addFunc(Empresa *e, int n)</div><div class="ttdoc">Função que adiciona um funcionário à uma empresa (apresenta escolha) </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:147</div></div>
+<div class="ttc" id="bancodados_8h_html_adc7875fefa77e8da976f4c585d88573a"><div class="ttname"><a href="bancodados_8h.html#adc7875fefa77e8da976f4c585d88573a">inputFuncionario</a></div><div class="ttdeci">Funcionario * inputFuncionario()</div><div class="ttdoc">Função que coleta os dados para cadastro de um funcionário. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:32</div></div>
+<div class="ttc" id="empresa_8h_html"><div class="ttname"><a href="empresa_8h.html">empresa.h</a></div><div class="ttdoc">Definição da classe Empresa. </div></div>
+<div class="ttc" id="funcionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div><div class="ttdoc">Definição da classe Funcionario. </div></div>
+<div class="ttc" id="bancodados_8h_html_a5a67a04aa94a8d727201ce96a8930705"><div class="ttname"><a href="bancodados_8h.html#a5a67a04aa94a8d727201ce96a8930705">delEmpresa</a></div><div class="ttdeci">Empresa * delEmpresa(Empresa *e, int &amp;n)</div><div class="ttdoc">Função que remove uma empresa do cadastro. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:109</div></div>
+<div class="ttc" id="bancodados_8h_html_a64c3353235925898ed784497597f22dd"><div class="ttname"><a href="bancodados_8h.html#a64c3353235925898ed784497597f22dd">cadEmpresa</a></div><div class="ttdeci">Empresa * cadEmpresa(Empresa *e, int &amp;n)</div><div class="ttdoc">Função que realiza o cadastro uma empresa. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:80</div></div>
+<div class="ttc" id="bancodados_8h_html_a1dcc8df7c7f52b48190c07495527688a"><div class="ttname"><a href="bancodados_8h.html#a1dcc8df7c7f52b48190c07495527688a">abrirBD</a></div><div class="ttdeci">Empresa * abrirBD(string nome, Empresa *e, int &amp;n)</div><div class="ttdoc">Função que recupera o cadastro completo a partir de um arquivo. </div><div class="ttdef"><b>Definition:</b> bancodados.cpp:404</div></div>
+<div class="ttc" id="classFuncionario_html"><div class="ttname"><a href="classFuncionario.html">Funcionario</a></div><div class="ttdoc">Classe que representa um funcionário. </div><div class="ttdef"><b>Definition:</b> funcionario.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Sábado, 13 de Maio de 2017 19:24:44 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
