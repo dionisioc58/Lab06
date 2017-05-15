@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['impempresas',['impEmpresas',['../bancodados_8h.html#a0897c03420afb2a6766eb1111a16149f',1,'impEmpresas(Empresa *e, int n, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#adc5d4340bff773fccd8b02260c54e353',1,'impEmpresas(Empresa *e, int n, bool pausa):&#160;bancodados.cpp']]],
-  ['impfunc',['impFunc',['../bancodados_8h.html#aff8ff4e2caed4a0017b8cc8b3a2876f1',1,'impFunc(Empresa *e, int n, bool all=true, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#ab802a3f70d986ea51db89e270f93c976',1,'impFunc(Empresa *e, int n, bool all, bool pausa):&#160;bancodados.cpp']]],
-  ['impfuncexp',['impFuncExp',['../bancodados_8h.html#a652467fd99772a1af57d04fe85db8a68',1,'impFuncExp(Empresa *e, int n, bool pausa):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a652467fd99772a1af57d04fe85db8a68',1,'impFuncExp(Empresa *e, int n, bool pausa):&#160;bancodados.cpp']]],
-  ['inputempresa',['inputEmpresa',['../bancodados_8h.html#ae05e3df239e882ff5f4d3cde5062bfaf',1,'inputEmpresa():&#160;bancodados.cpp'],['../bancodados_8cpp.html#ae05e3df239e882ff5f4d3cde5062bfaf',1,'inputEmpresa():&#160;bancodados.cpp']]],
-  ['inputfuncionario',['inputFuncionario',['../bancodados_8h.html#adc7875fefa77e8da976f4c585d88573a',1,'inputFuncionario():&#160;bancodados.cpp'],['../bancodados_8cpp.html#adc7875fefa77e8da976f4c585d88573a',1,'inputFuncionario():&#160;bancodados.cpp']]]
+  ['getadmissao',['getAdmissao',['../classFuncionario.html#a0daae31291759cfab778844bf851f1b5',1,'Funcionario']]],
+  ['getcnpj',['getCnpj',['../classEmpresa.html#a7289c123e5515521179f96a2b5656745',1,'Empresa']]],
+  ['getfuncionarios',['getFuncionarios',['../classEmpresa.html#a4d5c4d6045b7db03762e332d2a4fd51a',1,'Empresa']]],
+  ['getnome',['getNome',['../classEmpresa.html#a9dba7316e0e0449abe9c9ec7015927e1',1,'Empresa::getNome()'],['../classFuncionario.html#a13f42e2a8cb0515371b49745e5830c4c',1,'Funcionario::getNome()']]],
+  ['getqtde',['getQtde',['../classEmpresa.html#a8130da45ceee996f400a33451e7f8ce8',1,'Empresa']]],
+  ['getsalario',['getSalario',['../classFuncionario.html#a98d5aef3daa877847e45e6ff34c7dcf8',1,'Funcionario']]],
+  ['getvalor',['getValor',['../classLista.html#a94177c722231097e27a7ca950a689c1f',1,'Lista']]]
 ];

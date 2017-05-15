@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../empresa_8cpp.html#a9519b27d780d55c4f6dea043aab8ec43',1,'operator&lt;&lt;(ostream &amp;os, Empresa &amp;e):&#160;empresa.cpp'],['../funcionario_8cpp.html#a75068fd48c8f22133083f1dd8038c2eb',1,'operator&lt;&lt;(ostream &amp;os, Funcionario &amp;f):&#160;funcionario.cpp']]],
-  ['operator_3e_3e',['operator&gt;&gt;',['../empresa_8cpp.html#a37a21c18acff622dadaca510ba480e39',1,'operator&gt;&gt;(istream &amp;is, Empresa &amp;e):&#160;empresa.cpp'],['../funcionario_8cpp.html#ad350cffa45291b210634355e8c1940eb',1,'operator&gt;&gt;(istream &amp;is, Funcionario &amp;f):&#160;funcionario.cpp']]]
+  ['main',['main',['../tarefa1main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;tarefa1main.cpp'],['../tarefa2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;tarefa2main.cpp'],['../dados_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;dados.cpp']]],
+  ['minusculas',['minusculas',['../tratastring_8h.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp']]]
 ];

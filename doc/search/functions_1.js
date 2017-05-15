@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cadempresa',['cadEmpresa',['../bancodados_8h.html#a64c3353235925898ed784497597f22dd',1,'cadEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a64c3353235925898ed784497597f22dd',1,'cadEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp']]]
+  ['busca',['Busca',['../classLista.html#ab0d09454012e965323fa5887bfe9ec54',1,'Lista']]]
 ];

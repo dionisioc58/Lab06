@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['_7eempresa',['~Empresa',['../classEmpresa.html#a3c03ed7fbfdaa5c8db9b8587451f1326',1,'Empresa']]],
-  ['_7elista',['~Lista',['../classLista.html#a4d7394b2728a00ad8404965b2e15d096',1,'Lista']]]
+  ['tratar_5fstring',['tratar_string',['../tratastring_8h.html#ab73ebee468f7c226e911c9f6e190799a',1,'tratar_string(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ab73ebee468f7c226e911c9f6e190799a',1,'tratar_string(string &amp;s):&#160;tratastring.cpp']]]
 ];

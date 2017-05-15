@@ -1,5 +1,5 @@
-<map id="include/empresa.h" name="include/empresa.h">
-<area shape="rect" id="node2" href="$bancodados_8h.html" title="Arquivo de cabeçalho com a definição de funções para o controle dos dados. " alt="" coords="5,80,153,107"/>
-<area shape="rect" id="node4" href="$empresa_8cpp.html" title="Implementação da classe Empresa. " alt="" coords="177,80,296,107"/>
-<area shape="rect" id="node3" href="$bancodados_8cpp.html" title="Arquivo de corpo com a definição de funções para o controle dos dados. " alt="" coords="10,155,149,181"/>
+<map id="include/tarefa3/empresa.h" name="include/tarefa3/empresa.h">
+<area shape="rect" id="node2" href="$bancodados_8h.html" title="Arquivo de cabeçalho com a definição de funções para o controle dos dados. " alt="" coords="5,80,197,107"/>
+<area shape="rect" id="node4" href="$empresa_8cpp.html" title="Implementação da classe Empresa. " alt="" coords="221,80,384,107"/>
+<area shape="rect" id="node3" href="$bancodados_8cpp.html" title="Arquivo de corpo com a definição de funções para o controle dos dados. " alt="" coords="10,155,193,181"/>
 </map>

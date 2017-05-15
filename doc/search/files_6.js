@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tratastring_2ecpp',['tratastring.cpp',['../tratastring_8cpp.html',1,'']]],
-  ['tratastring_2eh',['tratastring.h',['../tratastring_8h.html',1,'']]]
+  ['pilha_2eh',['pilha.h',['../pilha_8h.html',1,'']]]
 ];

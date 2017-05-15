@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,21 +82,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Lista Lista dos Membros</div>  </div>
+<div class="title">Lista&lt; T &gt; Lista dos Membros</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Esta é a lista de todos os membros de <a class="el" href="classLista.html">Lista</a>, incluindo os membros herdados.</p>
+<p>Esta é a lista de todos os membros de <a class="el" href="classLista.html">Lista&lt; T &gt;</a>, incluindo os membros herdados.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Exibe</b>() (definido(a) em <a class="el" href="classLista.html">Lista</a>)</td><td class="entry"><a class="el" href="classLista.html">Lista</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Insere</b>(int el) (definido(a) em <a class="el" href="classLista.html">Lista</a>)</td><td class="entry"><a class="el" href="classLista.html">Lista</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLista.html#a1f668b36909182ef1360b48503529a31">Lista</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Remove</b>(int pos) (definido(a) em <a class="el" href="classLista.html">Lista</a>)</td><td class="entry"><a class="el" href="classLista.html">Lista</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLista.html#a4d7394b2728a00ad8404965b2e15d096">~Lista</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLista.html#a9241a937e38280ff5c70d7bcebf80993">Anterior</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLista.html#ab0d09454012e965323fa5887bfe9ec54">Busca</a>(T valor)</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLista.html#a3140b03892f5fbeeac0bbb704650aa93">Exibe</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLista.html#a94177c722231097e27a7ca950a689c1f">getValor</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLista.html#ae26be7a19ebae8ee436f8472dd4a7c69">Insere</a>(T valor)</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLista.html#adce924e21607848663132290be1a959d">Lista</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLista.html#ae88b0ad1a0dc9e00d4e34709ea12285e">Proximo</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLista.html#a1bc429b7bd3b0094cdcb67b4196daf21">RemovePos</a>(int pos)</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLista.html#aa0914a8efa49d241f90c9e6668e81285">RemoveVal</a>(T valor)</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLista.html#af297975e278b0c92cbf67d14b2f08366">~Lista</a>()</td><td class="entry"><a class="el" href="classLista.html">Lista&lt; T &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Sábado, 13 de Maio de 2017 19:24:44 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Domingo, 14 de Maio de 2017 22:34:31 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

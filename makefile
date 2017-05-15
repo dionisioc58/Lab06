@@ -30,8 +30,8 @@ debug: CFLAGS += -g -O0
 debug: clean tarefa1 tarefa2
 
 # Alvo (target) para a construcao do executavel tarefa1
-# Define os arquivos tratastring.o e main.o como dependencias
-tarefa1: $(OBJ_DIR)/tratastring.o $(OBJ_DIR)/main.o
+# Define os arquivos tratastring.o e tarefa1main.o como dependencias
+tarefa1: $(OBJ_DIR)/tratastring.o $(OBJ_DIR)/tarefa1main.o
 	@echo "============="
 	@echo "Ligando o alvo $@"
 	@echo "============="
@@ -41,17 +41,17 @@ tarefa1: $(OBJ_DIR)/tratastring.o $(OBJ_DIR)/main.o
 
 # Alvo (target) para a construcao do objeto tratastring.o
 # Define os arquivos tratastring.cpp e tratastring.h como dependencias.
-$(OBJ_DIR)/tratastring.o: $(SRC_DIR)/tratastring.cpp $(INC_DIR)/tratastring.h
+$(OBJ_DIR)/tratastring.o: $(SRC_DIR)/tarefa1/tratastring.cpp $(INC_DIR)/tarefa1/tratastring.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
-# Alvo (target) para a construcao do objeto main.o
-# Define o arquivo main.cpp como dependencia.
-$(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
+# Alvo (target) para a construcao do objeto tarefa1main.o
+# Define o arquivo tarefa1main.cpp como dependencia.
+$(OBJ_DIR)/tarefa1main.o: $(SRC_DIR)/tarefa1/tarefa1main.cpp
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 # Alvo (target) para a construcao do executavel tarefa2
 # Define os arquivos lista.o e tarefa2.o como dependencias
-tarefa2: $(OBJ_DIR)/lista.o $(OBJ_DIR)/tarefa2.o
+tarefa2: $(OBJ_DIR)/tarefa2main.o
 	@echo "============="
 	@echo "Ligando o alvo $@"
 	@echo "============="
@@ -59,29 +59,9 @@ tarefa2: $(OBJ_DIR)/lista.o $(OBJ_DIR)/tarefa2.o
 	@echo "+++ [Executavel $@ criado em $(BIN_DIR)] +++"
 	@echo "============="
 
-# Alvo (target) para a construcao do objeto lista.o
-# Define o arquivo lista.cpp como dependencia.
-$(OBJ_DIR)/lista.o: $(SRC_DIR)/lista.cpp $(INC_DIR)/lista.h
-	$(CC) -c $(CFLAGS) -o $@ $<
-
-# Alvo (target) para a construcao do objeto tarefa2.o
-# Define o arquivo tarefa2.cpp como dependencia.
-$(OBJ_DIR)/tarefa2.o: $(SRC_DIR)/tarefa2.cpp
-	$(CC) -c $(CFLAGS) -o $@ $<
-
-# Alvo (target) para a construcao do executavel teste
-# Define os arquivos lista.o e tarefa2.o como dependencias
-teste: $(OBJ_DIR)/lista.o $(OBJ_DIR)/teste.o
-	@echo "============="
-	@echo "Ligando o alvo $@"
-	@echo "============="
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
-	@echo "+++ [Executavel $@ criado em $(BIN_DIR)] +++"
-	@echo "============="
-
-# Alvo (target) para a construcao do objeto teste.o
-# Define o arquivo teste.cpp como dependencias.
-$(OBJ_DIR)/teste.o: $(TST_DIR)/teste.cpp
+# Alvo (target) para a construcao do objeto tarefa2main.o
+# Define o arquivo tarefa2main.cpp como dependencia.
+$(OBJ_DIR)/tarefa2main.o: $(SRC_DIR)/tarefa2/tarefa2main.cpp $(INC_DIR)/tarefa2/lista.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 # Alvo (target) para a geração automatica de documentacao usando o Doxygen.

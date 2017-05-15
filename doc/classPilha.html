@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,32 +88,153 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <div class="title">Referência da Template de Classe Pilha&lt; T &gt;</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Classe que representa uma pilha.  
+ <a href="classPilha.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pilha_8h_source.html">pilha.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos Públicos</h2></td></tr>
-<tr class="memitem:a64acb3d52c0f321cc6d2b836b78a84e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64acb3d52c0f321cc6d2b836b78a84e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Pilha</b> (int tam)</td></tr>
+<tr class="memitem:a64acb3d52c0f321cc6d2b836b78a84e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#a64acb3d52c0f321cc6d2b836b78a84e2">Pilha</a> (int tam)</td></tr>
 <tr class="separator:a64acb3d52c0f321cc6d2b836b78a84e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcb00de6044bfdf089bb475a1af569f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affcb00de6044bfdf089bb475a1af569f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Push</b> (T val)</td></tr>
+<tr class="memitem:a0c931f49acc17ce09b29c2d589d4fd0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#a0c931f49acc17ce09b29c2d589d4fd0b">~Pilha</a> ()</td></tr>
+<tr class="separator:a0c931f49acc17ce09b29c2d589d4fd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcb00de6044bfdf089bb475a1af569f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#affcb00de6044bfdf089bb475a1af569f">Push</a> (T val)</td></tr>
 <tr class="separator:affcb00de6044bfdf089bb475a1af569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853f85b93b29eefbee9087d37741d517"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a853f85b93b29eefbee9087d37741d517"></a>
-T&#160;</td><td class="memItemRight" valign="bottom"><b>Pop</b> ()</td></tr>
+<tr class="memitem:a853f85b93b29eefbee9087d37741d517"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#a853f85b93b29eefbee9087d37741d517">Pop</a> ()</td></tr>
 <tr class="separator:a853f85b93b29eefbee9087d37741d517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad2f8b9eec1a541924ef4d37070f97d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ad2f8b9eec1a541924ef4d37070f97d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Vazio</b> ()</td></tr>
+<tr class="memitem:a3ad2f8b9eec1a541924ef4d37070f97d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#a3ad2f8b9eec1a541924ef4d37070f97d">Vazio</a> ()</td></tr>
 <tr class="separator:a3ad2f8b9eec1a541924ef4d37070f97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae387ce38fed3a5f528e2f1fc555f82b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae387ce38fed3a5f528e2f1fc555f82b0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Cheio</b> ()</td></tr>
+<tr class="memitem:ae387ce38fed3a5f528e2f1fc555f82b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPilha.html#ae387ce38fed3a5f528e2f1fc555f82b0">Cheio</a> ()</td></tr>
 <tr class="separator:ae387ce38fed3a5f528e2f1fc555f82b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class Pilha&lt; T &gt;</h3>
+
+<p>Classe que representa uma pilha. </p>
+<p>Os atributos de uma lista são: dados, qtde e max </p>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="a64acb3d52c0f321cc6d2b836b78a84e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::<a class="el" href="classPilha.html">Pilha</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construtor padrão</p>
+<p>Os valores de dados e max são inicializados com o tamanho informado e a qtde com 0 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c931f49acc17ce09b29c2d589d4fd0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::~<a class="el" href="classPilha.html">Pilha</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destrutor padrão </p>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="ae387ce38fed3a5f528e2f1fc555f82b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::Cheio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Testa se a pilha está cheia </p>
+
+</div>
+</div>
+<a class="anchor" id="a853f85b93b29eefbee9087d37741d517"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::Pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retirar um dado da pilha </p>
+
+</div>
+</div>
+<a class="anchor" id="affcb00de6044bfdf089bb475a1af569f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::Push </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inserir um dado na pilha </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ad2f8b9eec1a541924ef4d37070f97d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classPilha.html">Pilha</a>&lt; T &gt;::Vazio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Testa se a pilha está vazia </p>
+
+</div>
+</div>
 <hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
-<li>include/<a class="el" href="pilha_8h_source.html">pilha.h</a></li>
+<li>include/tarefa1/<a class="el" href="pilha_8h_source.html">pilha.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Sábado, 13 de Maio de 2017 19:24:44 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Domingo, 14 de Maio de 2017 22:34:31 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

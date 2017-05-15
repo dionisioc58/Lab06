@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['empresa',['Empresa',['../classEmpresa.html#aff124b958356c479ab50ddf4cf302193',1,'Empresa']]],
-  ['existeempresa',['existeEmpresa',['../bancodados_8h.html#ab783f7890ff663f26c93c368513e9b7c',1,'existeEmpresa(Empresa *e, int n, Empresa *nova):&#160;bancodados.cpp'],['../bancodados_8cpp.html#ab783f7890ff663f26c93c368513e9b7c',1,'existeEmpresa(Empresa *e, int n, Empresa *nova):&#160;bancodados.cpp']]],
-  ['experiencia',['experiencia',['../classFuncionario.html#a8429bac79f1a9e6f8e07e8c3eeadccd6',1,'Funcionario']]],
-  ['exportar',['exportar',['../classEmpresa.html#a45954dab64a35f1f5812578391b71ee1',1,'Empresa::exportar()'],['../classFuncionario.html#a444116c4b7f7a5a5c2fe4821b89e53af',1,'Funcionario::exportar()']]]
+  ['dado',['dado',['../dados_8cpp.html#a17131193e63f6cb2c5ce9c6eac30d8e6',1,'dados.cpp']]],
+  ['delempresa',['delEmpresa',['../bancodados_8h.html#a5a67a04aa94a8d727201ce96a8930705',1,'delEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a5a67a04aa94a8d727201ce96a8930705',1,'delEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp']]],
+  ['delfunc',['delFunc',['../bancodados_8h.html#a429f207949e9fec144c3bcb9186810a4',1,'delFunc(Empresa *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a429f207949e9fec144c3bcb9186810a4',1,'delFunc(Empresa *e, int n):&#160;bancodados.cpp']]],
+  ['delfuncionario',['delFuncionario',['../classEmpresa.html#a0264fe65d01cefd3897f86c11fc27010',1,'Empresa']]]
 ];
