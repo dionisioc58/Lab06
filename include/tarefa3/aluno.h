@@ -31,6 +31,7 @@
         float nota;                                             /**< Nota */
     public:
         Aluno();                                                /**< Construtor padrão */
+        ~Aluno();                                               /**< Destrutor padrão */
         string getNome();                                       /**< Retorna o nome */
         void setNome(string n);                                 /**< Modifica o nome */
         string getMatricula();                                  /**< Retorna a matricula */
@@ -40,6 +41,7 @@
         float getNota();                                        /**< Retorna a nota */
         void setNota(float s);                                  /**< Modifica a nota */
         string exportar();                                      /**< Retorna uma string com os dados para exportação CSV */
+        bool operator>(Aluno &a);                               /** @brief Sobrecarga do operador de comparação > */
         friend ostream& operator<<(ostream& os, Aluno &f);      /** @brief Sobrecarga do operador de inserção em stream */
         friend istream& operator>>(istream& is, Aluno &f);      /** @brief Sobrecarga do operador de extração de stream */
     };

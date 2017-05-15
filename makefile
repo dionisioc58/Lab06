@@ -27,7 +27,7 @@ CFLAGS = -Wall -pedantic -ansi -std=c++11 -I $(INC_DIR)
 # Ao final da compilacao, remove os arquivos objeto.
 all: clean tarefa1 tarefa2 tarefa3 doxy
 debug: CFLAGS += -g -O0
-debug: clean tarefa1 tarefa2 tarefa3
+debug: clean tarefa3
 
 # Alvo (target) para a construcao do executavel tarefa1
 # Define os arquivos tratastring.o e tarefa1main.o como dependencias
@@ -101,7 +101,7 @@ $(OBJ_DIR)/funcoes.o: $(SRC_DIR)/tarefa3/funcoes.cpp $(INC_DIR)/tarefa3/funcoes.
 
 # Alvo (target) para a construcao do objeto tarefa3main.o
 # Define o arquivo tarefa3main.cpp como dependencia.
-$(OBJ_DIR)/tarefa3main.o: $(SRC_DIR)/tarefa3/tarefa3main.cpp
+$(OBJ_DIR)/tarefa3main.o: $(SRC_DIR)/tarefa3/tarefa3main.cpp $(INC_DIR)/tarefa2/lista.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 # Alvo (target) para a geração automatica de documentacao usando o Doxygen.

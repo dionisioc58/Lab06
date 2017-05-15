@@ -9,41 +9,38 @@
 #include "tarefa3/bancodados.h"
 
 /**
-* @brief        Função que coleta os dados para cadastro de uma turma
-* @return       Turma coletada
+* @brief        Função que coleta o nome para o cadastro de uma turma
+* @return       Nome da turma
 */
-Turma *inputTurma() {
-    //Coleta dados da turma
-    string input;
-    Turma *nova = new Turma[1];
+string inputTurma() {
+    string nome;
     cout << "Digite o nome da turma: ";
-    getline(cin, input);
-    nova[0].setNome(input);
-    return nova;
+    getline(cin, nome);
+    return nome;
 }
 
 /**
 * @brief        Função que coleta os dados para cadastro de um aluno
 * @return       Funcionário coletado
 */
-Aluno *inputAluno() {
+Aluno inputAluno() {
     //Coleta dados do aluno
     string input;
-    Aluno *novo = new Aluno[1];
+    Aluno novo;
 
     cout << "Digite o nome do aluno: ";
     getline(cin, input);
-    novo[0].setNome(input);
+    novo.setNome(input);
 
     cout << "Digite a matrícula do aluno: ";
     getline(cin, input);
-    novo[0].setMatricula(input);
+    novo.setMatricula(input);
 
     int faltas = recebeInt("Digite a quantidade de faltas: ", 0);
-    novo[0].setFaltas(faltas);
+    novo.setFaltas(faltas);
 
     float nota = recebeFloat("Digite a nota: ", 0);
-    novo[0].setNota(nota);
+    novo.setNota(nota);
     
     return novo;
 }
@@ -52,13 +49,13 @@ Aluno *inputAluno() {
 * @brief        Função que verifica se uma turma já existe no cadastro
 * @param[in]    *e Vetor de turmas do cadastro
 * @param[in]    n Número de turmas no cadastro
-* @param[in]    *nova Turma à ser verificada
+* @param[in]    nome Nome da turma a ser verificada
 * @return       Retorna true caso já exista
 */
-bool existeTurma(Turma *e, int n, Turma *nova) {
+bool existeTurma(Turma *e, int n, string nome) {
     //Testa se já existe no cadastro
     for(int i = 0; i < n; i++) {
-        if(e[i].getNome() == nova[0].getNome()) {
+        if(e[i].getNome() == nome) {
             cout << "Turma já cadastrada!" << endl;
             return true;
         }
@@ -73,8 +70,8 @@ bool existeTurma(Turma *e, int n, Turma *nova) {
 * @return       Retorna o novo vetor de turmas após o cadastro
 */
 Turma *cadTurma(Turma *e, int &n) {
-    Turma *nova = inputTurma();
-    if(existeTurma(e, n, nova))
+    string nome = inputTurma();
+    if(existeTurma(e, n, nome))
         return e;
 
     Turma *r = new Turma[n + 1];
@@ -83,14 +80,13 @@ Turma *cadTurma(Turma *e, int &n) {
     int j = 0;
     for(int i = 0; i < n; i++) {
         r[j].setNome(e[i].getNome());
-        r[j].setAlunos(e[i].getAlunos(), e[i].getQtde());
+        r[j].setAlunos(e[i].getAlunos());
         j++;
     }
     if(n > 0)
         delete[] e;
 
-    r[n++] = nova[0]; //Guarda o elemento informado
-    delete[] nova;
+    r[n++].setNome(nome); //Guarda a nova turma informada
     return r;
 }
 
@@ -122,7 +118,7 @@ Turma *delTurma(Turma *e, int &n) {
     for(int i = 0; i < n; i++)
         if(i != selecao) {
             r[j].setNome(e[i].getNome());
-            r[j].setAlunos(e[i].getAlunos(), e[i].getQtde());
+            r[j].setAlunos(e[i].getAlunos());
             j++;
         }
 
@@ -147,10 +143,9 @@ Turma *addAl(Turma *e, int n) {
         return e;
     selecao--;  //O usuário vai digitar o número com base em 1
 
-    Aluno *f;
+    Aluno f;
     f = inputAluno();
     e[selecao].addAluno(f);
-    delete[] f;
     return e;
 }
 
@@ -187,7 +182,7 @@ Turma *addAlArq(Turma *e, int n, bool pausa) {
         lista >> f;
         linhas++;
         if(f.getNome() != "\n") {
-            e[selecao].addAluno(&f);
+            e[selecao].addAluno(f);
             funcs++;
         }
     }
@@ -267,9 +262,14 @@ int impAl(Turma *e, int n, bool all, bool pausa) {
 
         if(e[selecao].getQtde() > 0) {
             cout << "Alunos da turma " << e[selecao].getNome() << endl;
-            Aluno *f = e[selecao].getAlunos();
-            for(int i = 0; i < e[selecao].getQtde(); i++)
-                cout << "   (" << (i + 1) << ") " << f[i] << endl;
+            Lista<Aluno> *f = e[selecao].getAlunos();
+            Aluno alun;
+            //for(int i = 0; i < e[selecao].getQtde(); i++) {
+            for(int i = 0; i < e[selecao].getQtde(); i++) {
+                f = f->getProximo();
+                alun = f->getValor();
+                cout << "   (" << (i + 1) << ") " << alun << endl;
+            }
 
         } else
             cout << "Nenhum aluno na turma selecionada." << endl;
@@ -281,13 +281,16 @@ int impAl(Turma *e, int n, bool all, bool pausa) {
         }
         return selecao;
     } else {        //Imprime todos os funcionários de todas as empresas
-        Aluno *f;
         for(int j = 0; j < n; j++) {
             if(e[j].getQtde() > 0) {
                 cout << "Alunos da turma " << e[j].getNome() << endl;
-                f = e[j].getAlunos();
-                for(int i = 0; i < e[j].getQtde(); i++)
-                    cout << "   (" << (i + 1) << ") " << f[i] << endl;
+                Lista<Aluno> *f = e[j].getAlunos();
+                Aluno alun;
+                for(int i = 0; i < e[j].getQtde(); i++) {
+                    f = f->getProximo();
+                    alun = f->getValor();
+                    cout << "   (" << (i + 1) << ") " << alun << endl;
+                }
             }
         }
         
@@ -314,8 +317,11 @@ void salvarBD(string nome, Turma *e, int n) {
     }
     for(int i = 0; i < n; i++) {
         saida << e[i].exportar() << endl;
-        for(int j = 0; j < e[i].getQtde(); j++)
-            saida << e[i].getAlunos()[j].exportar() << endl;
+        Lista<Aluno> *aa = e[i].getAlunos();
+        for(int j = 0; j < e[i].getQtde(); j++) {            
+            aa = aa->getProximo();
+            saida << aa->getValor().exportar() << endl;
+        }
     }
 
     saida.close();
@@ -332,7 +338,7 @@ void salvarBD(string nome, Turma *e, int n) {
 Turma *abrirBD(string nome, Turma *e, int &n) {
     ifstream entrada(nome);
     if(!entrada) {
-        cout << "Não foi possível abrir o arquivo para carregar." << endl;
+        cout << "Não foi possível abrir o arquivo de dados." << endl;
         return e;
     }
     string texto;
@@ -349,25 +355,24 @@ Turma *abrirBD(string nome, Turma *e, int &n) {
     entrada.clear();
     entrada.seekg(0);
     
-    Aluno *f = new Aluno[1];
+    Aluno f;
     while(!entrada.eof()) {
         getline(entrada, texto);
         if(texto != "") {
             info.clear();
             info << texto.substr(6);
 
-            if(texto.substr(0, 5) == "turma")
+            if(texto.substr(0, 6) == "turma;")
                 info >> r[++conta];
 
-            if(texto.substr(0, 5) == "aluno") {
+            if(texto.substr(0, 6) == "aluno;") {
                 if(conta > -1) {
-                    info >> f[0];
+                    info >> f;
                     r[conta].addAluno(f);
                 }
             }
         }   
     }
-    delete[] f;
     entrada.close();
     cout << "Recuperação concluída com sucesso!" << endl;
 

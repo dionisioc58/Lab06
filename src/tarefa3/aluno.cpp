@@ -20,6 +20,13 @@ Aluno::Aluno() {
 }
 
 /**
+* @details Destrutor padrão
+*/
+Aluno::~Aluno() {
+    //VAZIO
+}
+
+/**
 * @return Nome do aluno
 */
 string Aluno::getNome() {
@@ -92,6 +99,17 @@ string Aluno::exportar() {
 
 /** 
 * @details O operador é sobrecarregado para representar o aluno
+* @param	a Referência para o objeto aluno a ser comparado
+* @return	True se > que 'a'
+*/
+bool Aluno::operator>(Aluno &a) {
+    if(matricula > a.getMatricula())
+        return true;
+    return false;
+}
+
+/** 
+* @details O operador é sobrecarregado para representar o aluno
 * @param	os Referência para stream de saída
 * @param	f Referência para o objeto aluno a ser impresso
 * @return	Referência para stream de saída
@@ -119,10 +137,10 @@ istream& operator>>(istream& is, Aluno &f) {
     getline(is, f.matricula, ';');
 
     getline(is, lido, ';');
-    f.faltas = stof(lido);
+    f.faltas = stoi(lido);
 
     getline(is, lido);
-    f.nota = stoi(lido);
+    f.nota = stof(lido);
 
     return is;
 }

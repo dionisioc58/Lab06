@@ -26,11 +26,10 @@ int showMenu() {
     cout << "\t\t|                                                  |" << endl;
     cout << "\t\t|  (7) Listar alunos                               |" << endl;
     cout << "\t\t|  (8) Listar alunos de todas as turmas            |" << endl;
-    cout << "\t\t|  (9) Listar as médias de uma turma               |" << endl;
-    cout << "\t\t|  (10)Listar as médias de todas as turmas         |" << endl;
+    cout << "\t\t|  (9) Listar as médias de todas as turmas         |" << endl;
     cout << "\t\t|                                                  |" << endl;
-    cout << "\t\t|  (11)Salvar o cadastro em um arquivo             |" << endl;
-    cout << "\t\t|  (12)Recuperar o cadastro em um arquivo          |" << endl;
+    cout << "\t\t|  (10)Salvar o cadastro em um arquivo             |" << endl;
+    cout << "\t\t|  (11)Recuperar o cadastro em um arquivo          |" << endl;
     cout << "\t\t|  (0) Sair                                        |" << endl;
     cout << "\t\t|                                                  |" << endl;
     cout << "\t\t|**************************************************|" << endl;

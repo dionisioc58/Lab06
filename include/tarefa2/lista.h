@@ -30,12 +30,13 @@
         Lista();                                            /**< Construtor padrão */
         ~Lista();                                           /**< Destrutor padrão */
         T getValor();                                       /**< Retorna o valor */
+        int getTamanho();                                   /**< Retorna a quantidade de itens na lista */
         void Insere(T valor);                               /**< Insere um valor na lista */
         void RemovePos(int pos);                            /**< Remove um valor na posição informada */
         void RemoveVal(T valor);                            /**< Remove um valor específico */
         Lista *Busca(T valor);                              /**< Procura um valor e retorna o nó */
-        Lista *Anterior();                                  /**< Retorna o nó anterior */
-        Lista *Proximo();                                   /**< Retorna o próximo nó */
+        Lista *getAnterior();                               /**< Retorna o nó anterior */
+        Lista *getProximo();                                /**< Retorna o próximo nó */
         void Exibe();                                       /**< Imprime a lista */
     };
 
@@ -63,6 +64,20 @@
     template<typename T>
     T Lista<T>::getValor() {
         return dado;
+    }
+
+    /**
+    * @details Retorna a quantidade de itens na lista
+    */
+    template<typename T>
+    int Lista<T>::getTamanho() {
+        int retorno = 0;
+        Lista *tmp = this->prox;
+        while(tmp) {
+            retorno++;
+            tmp = tmp->prox;
+        }
+        return retorno;
     }
 
     /**
@@ -148,7 +163,7 @@
     * @details Retorna o nó anterior
     */
     template<typename T>
-    Lista<T> *Lista<T>::Anterior() {
+    Lista<T> *Lista<T>::getAnterior() {
         if(!ant->ant)   //Se o anterior do anterior for null, é o primeiro
             return NULL;
         return ant;
@@ -158,7 +173,7 @@
     * @details Retorna o próximo nó
     */
     template<typename T>
-    Lista<T> *Lista<T>::Proximo() {
+    Lista<T> *Lista<T>::getProximo() {
         return prox;
     }
 

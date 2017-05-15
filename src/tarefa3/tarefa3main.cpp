@@ -23,52 +23,54 @@ using std::endl;
 * @return		Retorno
 */
 int main(int argc, char* argv[]) {
-    int qtdemp = 0;         /**< Quantidade de turmas cadastradas */
-    Turma *emp = NULL;    /**< Vetor de turmas que conterá todo o cadastro */
-    emp = abrirBD("./data/banco.dat", emp, qtdemp); /**< Recuperar o cadastro a partir de um arquivo */
+    int qtdt = 0;         /**< Quantidade de turmas cadastradas */
+    Turma *tur = NULL;    /**< Vetor de turmas que conterá todo o cadastro */
+    tur = abrirBD("./data/banco.dat", tur, qtdt); /**< Recuperar o cadastro a partir de um arquivo */
     while(1) {
         switch(showMenu()) { //Exibir o menu
             case 0:             //Sair
-                delete[] emp;
+                delete[] tur;
                 return 0;
                 break;
             case 1:              //Cadastrar uma Turma
-                emp = cadTurma(emp, qtdemp);
+                tur = cadTurma(tur, qtdt);
                 break;
             case 2:              //Excluir uma Turma
-                emp = delTurma(emp, qtdemp);
+                tur = delTurma(tur, qtdt);
                 break;
             case 3:              //Listar as Turma
-                impTurmas(emp, qtdemp);
+                impTurmas(tur, qtdt);
                 break;
 
             case 4:              //Adicionar um aluno
-                emp = addAl(emp, qtdemp);
+                tur = addAl(tur, qtdt);
                 break;
             case 5:              //Adicionar alunos através de um arquivo
-                emp = addAlArq(emp, qtdemp);
+                tur = addAlArq(tur, qtdt);
                 break;
-            case 6:              //Remover um aluno
-                emp = delAl(emp, qtdemp);
+            case 6:              //Excluir um aluno
+                tur = delAl(tur, qtdt);
                 break;
             
             case 7:              //Listar os alunos de uma turma
-                impAl(emp, qtdemp, false);
+                impAl(tur, qtdt, false);
+                break;
+            case 8:             //Listar todos os alunos de todas as turmas
+                impAl(tur, qtdt, true);
+                break;
+            case 9:
+                impTurmas(tur, qtdt, true);
                 break;
             
-            case 8:             //Listar todos os alunos de todas as turmas
-                impAl(emp, qtdemp, true);
+            case 10:            //Salvar o banco de dados
+                salvarBD("./data/banco.dat", tur, qtdt); 
                 break;
-
-            case 9:            //Salvar o banco de dados
-                salvarBD("./data/banco.dat", emp, qtdemp); 
-                break;
-            case 10:            //Recuperar o banco
-                emp = abrirBD("./data/banco.dat", emp, qtdemp); 
+            case 11:            //Recuperar o banco
+                tur = abrirBD("./data/banco.dat", tur, qtdt); 
                 break;
         }
     }
     
-    delete[] emp;
+    delete[] tur;
     return 0;
 }

@@ -26,25 +26,25 @@
     #include "funcoes.h"
 
     /**
-    * @brief        Função que coleta os dados para cadastro de uma turma
-    * @return       Turma coletada
+    * @brief        Função que coleta o nome para o cadastro de uma turma
+    * @return       Nome da turma
     */
-    Turma *inputTurma();
+    string inputTurma();
 
     /**
     * @brief        Função que coleta os dados para cadastro de um aluno
     * @return       Aluno coletado
     */
-    Aluno *inputAluno();
+    Aluno inputAluno();
 
     /**
     * @brief        Função que verifica se uma turma já existe no cadastro
     * @param[in]    *e Vetor de turmas do cadastro
     * @param[in]    n Número de turmas no cadastro
-    * @param[in]    *nova Turma à ser verificada
+    * @param[in]    nome Nome da turma a ser verificada
     * @return       Retorna true caso já exista
     */
-    bool existeTurma(Turma *e, int n, Turma *nova);
+    bool existeTurma(Turma *e, int n, string nome);
 
     /**
     * @brief        Função que realiza o cadastro uma turma

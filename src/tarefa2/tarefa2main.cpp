@@ -45,11 +45,11 @@ int main(void) {
 	Lista<string> *busca = lista.Busca(b);
 	if(busca) {
 		cout << "Valor encontrado ";
-		Lista<string> *a = busca->Anterior();
+		Lista<string> *a = busca->getAnterior();
 		if(!a)
 			cout << "no início." << endl;
 		else {
-			Lista<string> *p = busca->Proximo();
+			Lista<string> *p = busca->getProximo();
 			if(!p)
 				cout << "no final." << endl;
 			else

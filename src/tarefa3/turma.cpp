@@ -14,14 +14,14 @@
 */
 Turma::Turma() {
     nome = "";
-    qtde = 0;
+    alunos = new Lista<Aluno>();
 }
 /**
 * @details Destrutor padrão
 */
 Turma::~Turma() {
-    if(qtde > 0)
-        delete[] alunos;
+    //if(alunos->getProximo())
+        delete alunos;
 }
 
 /**
@@ -43,53 +43,59 @@ void Turma::setNome(string n) {
 * @return Quantidade de alunos
 */
 int Turma::getQtde() {
-    return qtde;
+    return alunos->getTamanho();
 }
 
 /**
-* @return Os alunos da Turma
+* @return Média das notas dos alunos
 */
-Aluno *Turma::getAlunos() {
+float Turma::getMedia() {
+    float media = 0;
+    int qtde = alunos->getTamanho();
+    if(qtde == 0)
+        return qtde;
+
+    Lista<Aluno> *tmp = alunos->getProximo();
+    for(int i = 0; i < qtde; i++) {
+        media += tmp->getValor().getNota();
+        tmp = tmp->getProximo();
+    }
+    
+    return (media / qtde);
+}
+
+/**
+* @return A lista com os alunos da Turma
+*/
+Lista<Aluno> *Turma::getAlunos() {
     return alunos;
 }
 
 /**
 * @details O método modifica todos os alunos da Turma
-* @param   *f Vetor de alunos à associar com a Turma
-* @param   n Nome
+* @param   *f Ponteiro para a lista de alunos
 */
-void Turma::setAlunos(Aluno *f, int n) {
-    alunos = new Aluno[n];
-    for(int i = 0; i < n; i++) {
-        alunos[i].setNome(f[i].getNome());
-        alunos[i].setMatricula(f[i].getMatricula());
-        alunos[i].setFaltas(f[i].getFaltas());
-        alunos[i].setNota(f[i].getNota());
+void Turma::setAlunos(Lista<Aluno> *f) {
+    while(alunos->getTamanho() > 0)
+        alunos->RemovePos(0);
+
+    int qtde = f->getTamanho();
+    for(int i = 0; i < qtde; i++) {
+        f = f->getProximo();
+        alunos->Insere((Aluno)f->getValor());
     }
-    qtde = n;
 }
 
 /**
 * @details O método modifica adiciona um aluno
-* @param   *f Ponteiro com o aluno à incluir
+* @param   f Aluno à incluir
 * @return  True se adicionou
 */
-bool Turma::addAluno(Aluno *f) {
-    if(pertenceTurma(f->getNome())) 
+bool Turma::addAluno(Aluno f) {
+    if(pertenceTurma(f.getMatricula())) 
         return false;
 
-    //Cria um vetor maior
-    Aluno *arr = new Aluno[qtde + 1];
-
-    //Se já tem alunos, copia a antiga lista para uma nova maior
-    for(int i = 0; i < qtde; i++)
-        arr[i] = alunos[i];
-
-    if(qtde > 0)
-        delete[] alunos;
-    
-    alunos = arr;     //Vetor antigo recebe a nova lista
-    alunos[qtde++] = f[0];  //Guarda o elemento informado e incrementa a quantidade de alunos
+    alunos->Insere(f);
     
     return true;
 }
@@ -100,35 +106,27 @@ bool Turma::addAluno(Aluno *f) {
 * @return  True se conseguiu remover
 */
 bool Turma::delAluno(int f) {
-    if((f < 0) || (f >= qtde))
+    if((f < 0) || (f >= alunos->getTamanho()))
         return false;
 
-    //Cria um vetor menor
-    Aluno *arr = new Aluno[qtde - 1];
-
-    //Se já tem alunos, copia a antiga lista para uma nova menor
-    int j = 0;
-    for(int i = 0; i < qtde; i++) {
-        if(i != f)    //Se não é o aluno à remover, copie
-            arr[j++] = alunos[i];
-    }
-    delete[] alunos;
-
-    alunos = arr;     //Vetor antigo recebe a nova lista
-    qtde--;
+    alunos->RemovePos(f);
     
     return true;
 }
 
 /**
 * @details O método verifica se um nome pertence à lista de alunos
-* @param   n Nome do aluno à procurar
+* @param   n Matrícula do aluno à procurar
 * @return  True se pertence ao quadro de alunos
 */
 bool Turma::pertenceTurma(string n) {
-    for(int i = 0; i < qtde; i++)
-        if(alunos[i].getNome() == n)
+    Lista<Aluno> *tmp = alunos->getProximo();
+    int qtde = alunos->getTamanho();
+    for(int i = 0; i < qtde; i++) {
+        if(alunos->getValor().getMatricula() == n)
             return true;
+        tmp = tmp->getProximo();
+    }
     return false;
 }
 
@@ -146,7 +144,7 @@ string Turma::exportar() {
 * @return	Referência para stream de saída
 */
 ostream& operator<<(ostream& os, Turma &e) {
-	os << "Nome: " << e.nome << "\t | Alunos: " << e.qtde;
+	os << "Nome: " << e.nome << "\t | Alunos: " << e.alunos->getTamanho() << "\t | Média: " << e.getMedia();
 	return os;
 }
 
