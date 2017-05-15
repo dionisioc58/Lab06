@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['dado',['dado',['../dados_8cpp.html#a17131193e63f6cb2c5ce9c6eac30d8e6',1,'dados.cpp']]],
-  ['delempresa',['delEmpresa',['../bancodados_8h.html#a5a67a04aa94a8d727201ce96a8930705',1,'delEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a5a67a04aa94a8d727201ce96a8930705',1,'delEmpresa(Empresa *e, int &amp;n):&#160;bancodados.cpp']]],
-  ['delfunc',['delFunc',['../bancodados_8h.html#a429f207949e9fec144c3bcb9186810a4',1,'delFunc(Empresa *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a429f207949e9fec144c3bcb9186810a4',1,'delFunc(Empresa *e, int n):&#160;bancodados.cpp']]],
-  ['delfuncionario',['delFuncionario',['../classEmpresa.html#a0264fe65d01cefd3897f86c11fc27010',1,'Empresa']]]
+  ['delal',['delAl',['../bancodados_8h.html#a1483d4c9bcbfcfd79536d46af1c35b5d',1,'delAl(Turma *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a1483d4c9bcbfcfd79536d46af1c35b5d',1,'delAl(Turma *e, int n):&#160;bancodados.cpp']]],
+  ['delaluno',['delAluno',['../classTurma.html#a215fcb8783eb2e951e013cac2e909a6a',1,'Turma']]],
+  ['delturma',['delTurma',['../bancodados_8h.html#ac42c090625d66952bf56118aee6e4eb8',1,'delTurma(Turma *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#ac42c090625d66952bf56118aee6e4eb8',1,'delTurma(Turma *e, int &amp;n):&#160;bancodados.cpp']]]
 ];

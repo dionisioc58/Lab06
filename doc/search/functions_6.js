@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['getadmissao',['getAdmissao',['../classFuncionario.html#a0daae31291759cfab778844bf851f1b5',1,'Funcionario']]],
-  ['getcnpj',['getCnpj',['../classEmpresa.html#a7289c123e5515521179f96a2b5656745',1,'Empresa']]],
-  ['getfuncionarios',['getFuncionarios',['../classEmpresa.html#a4d5c4d6045b7db03762e332d2a4fd51a',1,'Empresa']]],
-  ['getnome',['getNome',['../classEmpresa.html#a9dba7316e0e0449abe9c9ec7015927e1',1,'Empresa::getNome()'],['../classFuncionario.html#a13f42e2a8cb0515371b49745e5830c4c',1,'Funcionario::getNome()']]],
-  ['getqtde',['getQtde',['../classEmpresa.html#a8130da45ceee996f400a33451e7f8ce8',1,'Empresa']]],
-  ['getsalario',['getSalario',['../classFuncionario.html#a98d5aef3daa877847e45e6ff34c7dcf8',1,'Funcionario']]],
-  ['getvalor',['getValor',['../classLista.html#a94177c722231097e27a7ca950a689c1f',1,'Lista']]]
+  ['impal',['impAl',['../bancodados_8h.html#a5df8de8d5dd023b1693a13a0b305ae10',1,'impAl(Turma *e, int n, bool all=true, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a03fe22a06de286f0df115be91f990063',1,'impAl(Turma *e, int n, bool all, bool pausa):&#160;bancodados.cpp']]],
+  ['impturmas',['impTurmas',['../bancodados_8h.html#ac0ee6263a122e08c30b9f5818cf7062b',1,'impTurmas(Turma *e, int n, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#ac24a4a5e13000bf84ee08cabe166fa7c',1,'impTurmas(Turma *e, int n, bool pausa):&#160;bancodados.cpp']]],
+  ['inputaluno',['inputAluno',['../bancodados_8h.html#a6e7e8b527ad73e91c4b45a222544d64e',1,'inputAluno():&#160;bancodados.cpp'],['../bancodados_8cpp.html#a6e7e8b527ad73e91c4b45a222544d64e',1,'inputAluno():&#160;bancodados.cpp']]],
+  ['inputturma',['inputTurma',['../bancodados_8h.html#aa74b442966dfb7661f149586bab2fa64',1,'inputTurma():&#160;bancodados.cpp'],['../bancodados_8cpp.html#aa74b442966dfb7661f149586bab2fa64',1,'inputTurma():&#160;bancodados.cpp']]],
+  ['insere',['Insere',['../classLista.html#ae26be7a19ebae8ee436f8472dd4a7c69',1,'Lista']]]
 ];

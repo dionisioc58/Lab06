@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['abrirbd',['abrirBD',['../bancodados_8h.html#a1dcc8df7c7f52b48190c07495527688a',1,'abrirBD(string nome, Empresa *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a1dcc8df7c7f52b48190c07495527688a',1,'abrirBD(string nome, Empresa *e, int &amp;n):&#160;bancodados.cpp']]],
-  ['addfunc',['addFunc',['../bancodados_8h.html#a195ecf21ddacb53155da071ce4476ca5',1,'addFunc(Empresa *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a195ecf21ddacb53155da071ce4476ca5',1,'addFunc(Empresa *e, int n):&#160;bancodados.cpp']]],
-  ['addfuncarq',['addFuncArq',['../bancodados_8h.html#a55ccd7ae599772173abd30d3a7ac9e95',1,'addFuncArq(Empresa *e, int n, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a1a443857cef16a89be64b039b9aec171',1,'addFuncArq(Empresa *e, int n, bool pausa):&#160;bancodados.cpp']]],
-  ['addfuncionario',['addFuncionario',['../classEmpresa.html#a938ac068471fac562a3249548b18a27b',1,'Empresa']]],
-  ['alvo',['alvo',['../dados_8cpp.html#a1636642939540af8227e643f4aaabc6e',1,'dados.cpp']]],
-  ['anterior',['Anterior',['../classLista.html#a9241a937e38280ff5c70d7bcebf80993',1,'Lista']]],
-  ['aumento',['aumento',['../classEmpresa.html#a26f7ca7d476748cec1455ce5cd790c73',1,'Empresa::aumento()'],['../bancodados_8h.html#ae7fe571658d456daf009d5f049ba0a52',1,'aumento(Empresa *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#ae7fe571658d456daf009d5f049ba0a52',1,'aumento(Empresa *e, int n):&#160;bancodados.cpp']]]
+  ['abrirbd',['abrirBD',['../bancodados_8h.html#a67c1f07c1571d00ecc43a9a459193eee',1,'abrirBD(string nome, Turma *e, int &amp;n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a67c1f07c1571d00ecc43a9a459193eee',1,'abrirBD(string nome, Turma *e, int &amp;n):&#160;bancodados.cpp']]],
+  ['addal',['addAl',['../bancodados_8h.html#aa55d824a717da97b616cbac80b7f35d3',1,'addAl(Turma *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#aa55d824a717da97b616cbac80b7f35d3',1,'addAl(Turma *e, int n):&#160;bancodados.cpp']]],
+  ['addalarq',['addAlArq',['../bancodados_8h.html#aeb3e17460b1f2a36e3b717474feb1011',1,'addAlArq(Turma *e, int n, bool pausa=true):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a0c760083f25503bf226b2f1e1688d9d2',1,'addAlArq(Turma *e, int n, bool pausa):&#160;bancodados.cpp']]],
+  ['addaluno',['addAluno',['../classTurma.html#ae0e0fb547b6ef18323308ca18d2e6426',1,'Turma']]],
+  ['aluno',['Aluno',['../classAluno.html',1,'Aluno'],['../classAluno.html#ad5106d0f7834762fbe5f71f908144336',1,'Aluno::Aluno()']]],
+  ['aluno_2ecpp',['aluno.cpp',['../aluno_8cpp.html',1,'']]],
+  ['aluno_2eh',['aluno.h',['../aluno_8h.html',1,'']]],
+  ['anterior',['Anterior',['../classLista.html#a9241a937e38280ff5c70d7bcebf80993',1,'Lista']]]
 ];

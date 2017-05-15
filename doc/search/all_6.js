@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['getadmissao',['getAdmissao',['../classFuncionario.html#a0daae31291759cfab778844bf851f1b5',1,'Funcionario']]],
-  ['getcnpj',['getCnpj',['../classEmpresa.html#a7289c123e5515521179f96a2b5656745',1,'Empresa']]],
-  ['getfuncionarios',['getFuncionarios',['../classEmpresa.html#a4d5c4d6045b7db03762e332d2a4fd51a',1,'Empresa']]],
-  ['getnome',['getNome',['../classEmpresa.html#a9dba7316e0e0449abe9c9ec7015927e1',1,'Empresa::getNome()'],['../classFuncionario.html#a13f42e2a8cb0515371b49745e5830c4c',1,'Funcionario::getNome()']]],
-  ['getqtde',['getQtde',['../classEmpresa.html#a8130da45ceee996f400a33451e7f8ce8',1,'Empresa']]],
-  ['getsalario',['getSalario',['../classFuncionario.html#a98d5aef3daa877847e45e6ff34c7dcf8',1,'Funcionario']]],
+  ['getalunos',['getAlunos',['../classTurma.html#a988c7b2271d80626d79abffaf410b225',1,'Turma']]],
+  ['getfaltas',['getFaltas',['../classAluno.html#a82d8adfeac016e8a0797f38dd661bb8a',1,'Aluno']]],
+  ['getmatricula',['getMatricula',['../classAluno.html#a4e6b3cb66a06ac974c5e197c10a4f33c',1,'Aluno']]],
+  ['getnome',['getNome',['../classAluno.html#a75ca576e335d4678e6777de92a218b99',1,'Aluno::getNome()'],['../classTurma.html#adbf47bc105866a24268db6ccb8559d70',1,'Turma::getNome()']]],
+  ['getnota',['getNota',['../classAluno.html#a593f6d0af763646e7deb6bcac3250604',1,'Aluno']]],
+  ['getqtde',['getQtde',['../classTurma.html#a5771c7419f25f57c07d0226a8cd69625',1,'Turma']]],
   ['getvalor',['getValor',['../classLista.html#a94177c722231097e27a7ca950a689c1f',1,'Lista']]]
 ];

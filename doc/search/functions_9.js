@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../tarefa1main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;tarefa1main.cpp'],['../tarefa2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;tarefa2main.cpp'],['../dados_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;dados.cpp']]],
-  ['minusculas',['minusculas',['../tratastring_8h.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../aluno_8cpp.html#afa1911f367b1d9c9295ee086d50ebe9e',1,'operator&lt;&lt;(ostream &amp;os, Aluno &amp;f):&#160;aluno.cpp'],['../turma_8cpp.html#a7e70940046e1ab7872a2d603949da068',1,'operator&lt;&lt;(ostream &amp;os, Turma &amp;e):&#160;turma.cpp']]],
+  ['operator_3e_3e',['operator&gt;&gt;',['../aluno_8cpp.html#acb828c73f8e22b5dc12f6e1dce773660',1,'operator&gt;&gt;(istream &amp;is, Aluno &amp;f):&#160;aluno.cpp'],['../turma_8cpp.html#a02b6419a8c1a520c79ed24139252a709',1,'operator&gt;&gt;(istream &amp;is, Turma &amp;e):&#160;turma.cpp']]]
 ];

@@ -22,6 +22,6 @@
     * @brief        Função que exibe o menu principal
     * @return       Retorna a opção escolhida
     */
-    int showMenuEmp();
+    int showMenu();
 
 #endif

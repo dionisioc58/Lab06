@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vazio',['Vazio',['../classPilha.html#a3ad2f8b9eec1a541924ef4d37070f97d',1,'Pilha']]]
+  ['_7elista',['~Lista',['../classLista.html#af297975e278b0c92cbf67d14b2f08366',1,'Lista']]],
+  ['_7epilha',['~Pilha',['../classPilha.html#a0c931f49acc17ce09b29c2d589d4fd0b',1,'Pilha']]],
+  ['_7eturma',['~Turma',['../classTurma.html#ac9901558278461593150226ed06567e2',1,'Turma']]]
 ];

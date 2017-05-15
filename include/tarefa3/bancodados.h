@@ -21,127 +21,108 @@
     #include <string>
     using std::string;
 
-    #include "empresa.h"
-    #include "funcionario.h"
+    #include "turma.h"
+    #include "aluno.h"
     #include "funcoes.h"
 
     /**
-    * @brief        Função que coleta os dados para cadastro de uma empresa
-    * @return       Empresa coletada
+    * @brief        Função que coleta os dados para cadastro de uma turma
+    * @return       Turma coletada
     */
-    Empresa *inputEmpresa();
+    Turma *inputTurma();
 
     /**
-    * @brief        Função que coleta os dados para cadastro de um funcionário
-    * @return       Funcionário coletado
+    * @brief        Função que coleta os dados para cadastro de um aluno
+    * @return       Aluno coletado
     */
-    Funcionario *inputFuncionario();
+    Aluno *inputAluno();
 
     /**
-    * @brief        Função que verifica se uma empresa já existe no cadastro
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @param[in]    *nova Empresa à ser verificada
+    * @brief        Função que verifica se uma turma já existe no cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
+    * @param[in]    *nova Turma à ser verificada
     * @return       Retorna true caso já exista
     */
-    bool existeEmpresa(Empresa *e, int n, Empresa *nova);
+    bool existeTurma(Turma *e, int n, Turma *nova);
 
     /**
-    * @brief        Função que realiza o cadastro uma empresa
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[inout] n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após o cadastro
+    * @brief        Função que realiza o cadastro uma turma
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[inout] n Número de turmas no cadastro
+    * @return       Retorna o novo vetor de turmas após o cadastro
     */
-    Empresa *cadEmpresa(Empresa *e, int &n);
+    Turma *cadTurma(Turma *e, int &n);
 
     /**
-    * @brief        Função que remove uma empresa do cadastro
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[inout] n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após a exclusão
+    * @brief        Função que remove uma turma do cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[inout] n Número de turmas no cadastro
+    * @return       Retorna o novo vetor de turmas após a exclusão
     */
-    Empresa *delEmpresa(Empresa *e, int &n);
+    Turma *delTurma(Turma *e, int &n);
 
     /**
-    * @brief        Função que adiciona um funcionário à uma empresa (apresenta escolha)
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após o cadastro
+    * @brief        Função que adiciona um aluno à uma turma (apresenta escolha)
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
+    * @return       Retorna o novo vetor de turmas após o cadastro
     */
-    Empresa *addFunc(Empresa *e, int n);
+    Turma *addAl(Turma *e, int n);
 
     /**
-    * @brief        Função que adiciona funcionários à uma empresa (apresenta escolha),
+    * @brief        Função que adiciona alunos à uma turma (apresenta escolha),
     *               carregando-os apartir de um arquivo CSV
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
     * @param[in]    pausa True para apresentar uma pausa após a impressão do relatório de importação
-    * @return       Retorna o novo vetor de empresas após o cadastro
+    * @return       Retorna o novo vetor de turmas após o cadastro
     */
-    Empresa *addFuncArq(Empresa *e, int n, bool pausa = true);
+    Turma *addAlArq(Turma *e, int n, bool pausa = true);
 
     /**
-    * @brief        Função que remove um funcionário de uma empresa (apresenta escolha)
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após o cadastro
+    * @brief        Função que remove um aluno de uma turma (apresenta escolha)
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
+    * @return       Retorna o novo vetor de turmas após o cadastro
     */
-    Empresa *delFunc(Empresa *e, int n);
+    Turma *delAl(Turma *e, int n);
 
     /**
-    * @brief        Função que solicita um valor (percentual) e uma empresa (apresenta escolha)
-    *               para dar um aumento à todos os seus funcionários
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após o cadastro
-    */
-    Empresa *aumento(Empresa *e, int n);
-
-    /**
-    * @brief        Função que imprime as empresas no cadastro
-    * @param[in]    *e Vetor de empresas do cadastro
+    * @brief        Função que imprime as turmas no cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
     * @param[in]    pausa True para apresentar uma pausa após a impressão
-    * @param[in]    n Número de empresas no cadastro
+    * @param[in]    n Número de turmas no cadastro
     */
-    void impEmpresas(Empresa *e, int n, bool pausa = true);
+    void impTurmas(Turma *e, int n, bool pausa = true);
 
     /**
-    * @brief        Função que imprime a lista de funcionários de uma ou todas 
-                    as empresas do cadastro
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @param[in]    all "true" imprime todos os funcionários de todas as empresas
-                    "false" imprime apenas os funcionários de uma empresa (apresenta escolha)
+    * @brief        Função que imprime a lista de alunos de uma ou todas 
+                    as turmas do cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
+    * @param[in]    all "true" imprime todos os alunos de todas as turmas
+                    "false" imprime apenas os alunos de uma turma (apresenta escolha)
     * @param[in]    pausa True para apresentar uma pausa após a impressão
-    * @return       -1 ou o número da empresa selecionada
+    * @return       -1 ou o número da turma selecionada
     */
-    int impFunc(Empresa *e, int n, bool all = true, bool pausa = true);
-
-    /**
-    * @brief        Função que imprime a lista de funcionários em experiência 
-                    de uma empresa (apresenta escolha)
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
-    * @param[in]    pausa True para apresentar uma pausa após a impressão
-    * @return       -1 ou o número da empresa selecionada
-    */
-    int impFuncExp(Empresa *e, int n, bool pausa);
+    int impAl(Turma *e, int n, bool all = true, bool pausa = true);
 
     /**
     * @brief        Função que salva o cadastro completo em arquivo
     * @param[in]    nome Caminho/nome do arquivo de dados
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[in]    n Número de empresas no cadastro
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[in]    n Número de turmas no cadastro
     */
-    void salvarBD(string nome, Empresa *e, int n);
+    void salvarBD(string nome, Turma *e, int n);
 
     /**
     * @brief        Função que recupera o cadastro completo a partir de um arquivo
     * @param[in]    nome Caminho/nome do arquivo de dados
-    * @param[in]    *e Vetor de empresas do cadastro
-    * @param[inout] n Número de empresas no cadastro
-    * @return       Retorna o novo vetor de empresas após a importação
+    * @param[in]    *e Vetor de turmas do cadastro
+    * @param[inout] n Número de turmas no cadastro
+    * @return       Retorna o novo vetor de turmas após a importação
     */
-    Empresa *abrirBD(string nome, Empresa *e, int &n);
+    Turma *abrirBD(string nome, Turma *e, int &n);
 
 #endif

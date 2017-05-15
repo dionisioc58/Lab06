@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tratar_5fstring',['tratar_string',['../tratastring_8h.html#ab73ebee468f7c226e911c9f6e190799a',1,'tratar_string(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ab73ebee468f7c226e911c9f6e190799a',1,'tratar_string(string &amp;s):&#160;tratastring.cpp']]]
+  ['vazio',['Vazio',['../classPilha.html#a3ad2f8b9eec1a541924ef4d37070f97d',1,'Pilha']]]
 ];

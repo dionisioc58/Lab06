@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lista',['Lista',['../classLista.html#adce924e21607848663132290be1a959d',1,'Lista']]]
+  ['main',['main',['../tarefa1main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;tarefa1main.cpp'],['../tarefa2main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;tarefa2main.cpp'],['../tarefa3main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;tarefa3main.cpp']]],
+  ['minusculas',['minusculas',['../tratastring_8h.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp'],['../tratastring_8cpp.html#ae43cf6b49fec4f2227f8a73cca5b2080',1,'minusculas(string &amp;s):&#160;tratastring.cpp']]]
 ];

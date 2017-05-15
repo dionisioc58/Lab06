@@ -1,8 +1,0 @@
-<map id="include/tarefa3/funcionario.h" name="include/tarefa3/funcionario.h">
-<area shape="rect" id="node2" href="$empresa_8h.html" title="Definição da classe Empresa. " alt="" coords="139,80,311,107"/>
-<area shape="rect" id="node3" href="$bancodados_8h.html" title="Arquivo de cabeçalho com a definição de funções para o controle dos dados. " alt="" coords="5,155,197,181"/>
-<area shape="rect" id="node6" href="$dados_8cpp.html" title="Arquivo fonte para execução do projeto. " alt="" coords="335,80,483,107"/>
-<area shape="rect" id="node7" href="$funcionario_8cpp.html" title="Implementacao dos métodos da classe Funcionario. " alt="" coords="508,80,684,107"/>
-<area shape="rect" id="node5" href="$empresa_8cpp.html" title="Implementação da classe Empresa. " alt="" coords="221,155,384,181"/>
-<area shape="rect" id="node4" href="$bancodados_8cpp.html" title="Arquivo de corpo com a definição de funções para o controle dos dados. " alt="" coords="10,229,193,256"/>
-</map>

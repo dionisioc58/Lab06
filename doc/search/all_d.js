@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['salvarbd',['salvarBD',['../bancodados_8h.html#a23e571bc755081d003ab44824ef6f55e',1,'salvarBD(string nome, Empresa *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#a23e571bc755081d003ab44824ef6f55e',1,'salvarBD(string nome, Empresa *e, int n):&#160;bancodados.cpp']]],
-  ['setadmissao',['setAdmissao',['../classFuncionario.html#aa45e84ed8cabba37230b3ccf8279b1e2',1,'Funcionario']]],
-  ['setcnpj',['setCnpj',['../classEmpresa.html#a8b1c2685c916d97ec9d2743cdb8a9687',1,'Empresa']]],
-  ['setfuncionarios',['setFuncionarios',['../classEmpresa.html#a889c052024f28eaf782ac5f934f89998',1,'Empresa']]],
-  ['setnome',['setNome',['../classEmpresa.html#a7ab120a3bb37cdab4a8492bac59e09a2',1,'Empresa::setNome()'],['../classFuncionario.html#a3171c2827620626faa7e883e996e716f',1,'Funcionario::setNome()']]],
-  ['setsalario',['setSalario',['../classFuncionario.html#a1f6c9be6eaac826e59dd4da4925c1477',1,'Funcionario']]],
-  ['showmenuemp',['showMenuEmp',['../menu_8h.html#abda9eefeae2e82815c5470fa80aa2fd0',1,'showMenuEmp():&#160;menu.cpp'],['../menu_8cpp.html#abda9eefeae2e82815c5470fa80aa2fd0',1,'showMenuEmp():&#160;menu.cpp']]]
+  ['salvarbd',['salvarBD',['../bancodados_8h.html#af60e896e26bea9c82bfbe1a0050cabeb',1,'salvarBD(string nome, Turma *e, int n):&#160;bancodados.cpp'],['../bancodados_8cpp.html#af60e896e26bea9c82bfbe1a0050cabeb',1,'salvarBD(string nome, Turma *e, int n):&#160;bancodados.cpp']]],
+  ['setalunos',['setAlunos',['../classTurma.html#aea34e31441749a58f5f72211689c191a',1,'Turma']]],
+  ['setfaltas',['setFaltas',['../classAluno.html#a81a037c74eebec6cb49305c789b6a996',1,'Aluno']]],
+  ['setmatricula',['setMatricula',['../classAluno.html#adde7217058092b7eef1ad05afd003716',1,'Aluno']]],
+  ['setnome',['setNome',['../classAluno.html#a60a2afaef7d91e1acdd797d0f1c6a68e',1,'Aluno::setNome()'],['../classTurma.html#ac77d72042e64e8f15bfdb8b9f3000e04',1,'Turma::setNome()']]],
+  ['setnota',['setNota',['../classAluno.html#a01b4116878cb6d84b4ea0b38b337e356',1,'Aluno']]],
+  ['showmenu',['showMenu',['../menu_8h.html#a0be44243f30672c846deedaf6b3660f9',1,'showMenu():&#160;menu.cpp'],['../menu_8cpp.html#a0be44243f30672c846deedaf6b3660f9',1,'showMenu():&#160;menu.cpp']]]
 ];
