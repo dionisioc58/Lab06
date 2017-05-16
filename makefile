@@ -27,7 +27,7 @@ CFLAGS = -Wall -pedantic -ansi -std=c++11 -I $(INC_DIR)
 # Ao final da compilacao, remove os arquivos objeto.
 all: clean tarefa1 tarefa2 tarefa3 doxy
 debug: CFLAGS += -g -O0
-debug: clean tarefa3
+debug: clean tarefa1 tarefa2 tarefa3
 
 # Alvo (target) para a construcao do executavel tarefa1
 # Define os arquivos tratastring.o e tarefa1main.o como dependencias

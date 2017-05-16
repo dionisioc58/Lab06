@@ -140,9 +140,10 @@
             remove = remove->prox;
         }
         if(remove) {
-            atual->prox = remove->prox; //Relink o anterior ao próximo
-            remove->prox->ant = atual;  //Relink o próximo ao anterior
-            remove->prox = NULL;        //Para não remover todos os próximos através do destrutor padrão
+            atual->prox = remove->prox;     //Relink o anterior ao próximo
+            if(remove->prox)                //Se houve próximo, relink o anterior dele com o anterior
+                remove->prox->ant = atual;  
+            remove->prox = NULL;            //Para não remover todos os próximos através do destrutor padrão
             delete remove;				
         }
     }
