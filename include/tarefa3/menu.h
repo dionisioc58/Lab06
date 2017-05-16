@@ -16,6 +16,8 @@
     #include <string>
     using std::string;
 
+    #include <termios.h>
+
     #include "funcoes.h"
 
     /**

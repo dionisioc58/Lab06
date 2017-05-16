@@ -37,8 +37,8 @@ int showMenu() {
     int opcao = 0;
     do {
         opcao = recebeInt(": ", 0);
-        if((opcao < 0) || (opcao > 10))
+        if((opcao < 0) || (opcao > 11))
             cout << "Valor inválido!" << endl;
-    } while ((opcao < 0) || (opcao > 12));
+    } while ((opcao < 0) || (opcao > 11));
     return opcao;
 }

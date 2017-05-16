@@ -32,6 +32,7 @@ int main(int argc, char* argv[]) {
                 delete[] tur;
                 return 0;
                 break;
+                
             case 1:              //Cadastrar uma Turma
                 tur = cadTurma(tur, qtdt);
                 break;
@@ -70,7 +71,7 @@ int main(int argc, char* argv[]) {
                 break;
         }
     }
-    
+ 
     delete[] tur;
     return 0;
 }
