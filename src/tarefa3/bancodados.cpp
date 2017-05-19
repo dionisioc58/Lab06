@@ -87,6 +87,7 @@ Turma *cadTurma(Turma *e, int &n) {
         delete[] e;
 
     r[n++].setNome(nome); //Guarda a nova turma informada
+    
     return r;
 }
 

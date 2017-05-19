@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,7 +85,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Funções</a>  </div>
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
   <div class="headertitle">
 <div class="title">Referência do Arquivo menu.cpp</div>  </div>
 </div><!--header-->
@@ -102,18 +104,90 @@ Gráfico de dependência de inclusões para menu.cpp:</div>
 <area shape="rect" id="node2" href="menu_8h.html" title="Arquivo de cabeçalho com a definição de funções para o menu. " alt="" coords="76,80,185,107"/><area shape="rect" id="node6" href="funcoes_8h.html" title="Arquivo de cabeçalho com a definição de funções auxiliares para a entrada de dados. " alt="" coords="41,155,119,181"/></map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a50c9339f05dfbf3430fa057e8b5107ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html#a50c9339f05dfbf3430fa057e8b5107ac">itens</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a50c9339f05dfbf3430fa057e8b5107ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
 <tr class="memitem:a0be44243f30672c846deedaf6b3660f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html#a0be44243f30672c846deedaf6b3660f9">showMenu</a> ()</td></tr>
 <tr class="memdesc:a0be44243f30672c846deedaf6b3660f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que exibe o menu principal.  <a href="#a0be44243f30672c846deedaf6b3660f9">Mais...</a><br /></td></tr>
 <tr class="separator:a0be44243f30672c846deedaf6b3660f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e521f40b8340d5e8fe208698908ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html#a10e521f40b8340d5e8fe208698908ff9">configura</a> (bool liga)</td></tr>
+<tr class="memdesc:a10e521f40b8340d5e8fe208698908ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que configura a entrada padrão para as funções do menu.  <a href="#a10e521f40b8340d5e8fe208698908ff9">Mais...</a><br /></td></tr>
+<tr class="separator:a10e521f40b8340d5e8fe208698908ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html#ae5f25d772eeee7ae6f5679f1a80020b8">movimenta</a> ()</td></tr>
+<tr class="memdesc:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que captura a entrada de dados.  <a href="#ae5f25d772eeee7ae6f5679f1a80020b8">Mais...</a><br /></td></tr>
+<tr class="separator:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:afc42cdc50547b477ee21901d1c9ddf5e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html#afc42cdc50547b477ee21901d1c9ddf5e">opcoes</a> [<a class="el" href="menu_8cpp.html#a50c9339f05dfbf3430fa057e8b5107ac">itens</a>]</td></tr>
+<tr class="separator:afc42cdc50547b477ee21901d1c9ddf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Arquivo de corpo com a definição de funções para o menu. </p>
 <dl class="section author"><dt>Autor</dt><dd>Dionísio Carvalho (<a href="#" onclick="location.href='mai'+'lto:'+'dio'+'ni'+'sio'+'@n'+'ara'+'co'+'sta'+'.c'+'om.'+'br'; return false;">dioni<span style="display: none;">.nosp@m.</span>sio@<span style="display: none;">.nosp@m.</span>narac<span style="display: none;">.nosp@m.</span>osta<span style="display: none;">.nosp@m.</span>.com.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
 <dl class="section since"><dt>Desde</dt><dd>28/04/2017 </dd></dl>
 <dl class="section date"><dt>Data</dt><dd>15/05/2017 </dd></dl>
-</div><h2 class="groupheader">Funções</h2>
+</div><h2 class="groupheader">Definições e macros</h2>
+<a class="anchor" id="a50c9339f05dfbf3430fa057e8b5107ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define itens&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Quantidade de opções no menu </p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a10e521f40b8340d5e8fe208698908ff9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void configura </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>liga</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que configura a entrada padrão para as funções do menu. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">liga</td><td>True para ativar as funções de seleção do menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5f25d772eeee7ae6f5679f1a80020b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int movimenta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que captura a entrada de dados. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o número da tecla pressionada </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0be44243f30672c846deedaf6b3660f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,10 +206,38 @@ Funções</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="afc42cdc50547b477ee21901d1c9ddf5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string opcoes[<a class="el" href="menu_8cpp.html#a50c9339f05dfbf3430fa057e8b5107ac">itens</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor Inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;Cadastrar uma turma                         &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Excluir uma turma                           &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Listar as turmas                            &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Cadastrar um aluno                          &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Cadastrar alunos através de um arquivo      &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Excluir um aluno                            &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Listar alunos                               &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Listar alunos de todas as turmas            &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Listar as médias de todas as turmas         &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Salvar o cadastro em um arquivo             &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Recuperar o cadastro em um arquivo          &quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Sair                                        &quot;</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Opções do menu </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Segunda, 15 de Maio de 2017 21:15:31 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Sexta, 19 de Maio de 2017 16:15:30 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

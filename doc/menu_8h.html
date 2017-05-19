@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,6 +119,12 @@ Funções</h2></td></tr>
 <tr class="memitem:a0be44243f30672c846deedaf6b3660f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8h.html#a0be44243f30672c846deedaf6b3660f9">showMenu</a> ()</td></tr>
 <tr class="memdesc:a0be44243f30672c846deedaf6b3660f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que exibe o menu principal.  <a href="#a0be44243f30672c846deedaf6b3660f9">Mais...</a><br /></td></tr>
 <tr class="separator:a0be44243f30672c846deedaf6b3660f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e521f40b8340d5e8fe208698908ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8h.html#a10e521f40b8340d5e8fe208698908ff9">configura</a> (bool liga)</td></tr>
+<tr class="memdesc:a10e521f40b8340d5e8fe208698908ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que configura a entrada padrão para as funções do menu.  <a href="#a10e521f40b8340d5e8fe208698908ff9">Mais...</a><br /></td></tr>
+<tr class="separator:a10e521f40b8340d5e8fe208698908ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8h.html#ae5f25d772eeee7ae6f5679f1a80020b8">movimenta</a> ()</td></tr>
+<tr class="memdesc:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que captura a entrada de dados.  <a href="#ae5f25d772eeee7ae6f5679f1a80020b8">Mais...</a><br /></td></tr>
+<tr class="separator:ae5f25d772eeee7ae6f5679f1a80020b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Arquivo de cabeçalho com a definição de funções para o menu. </p>
@@ -126,6 +132,48 @@ Funções</h2></td></tr>
 <dl class="section since"><dt>Desde</dt><dd>28/04/2017 </dd></dl>
 <dl class="section date"><dt>Data</dt><dd>28/04/2017 </dd></dl>
 </div><h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a10e521f40b8340d5e8fe208698908ff9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void configura </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>liga</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que configura a entrada padrão para as funções do menu. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">liga</td><td>True para ativar as funções de seleção do menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5f25d772eeee7ae6f5679f1a80020b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int movimenta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que captura a entrada de dados. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna o número da tecla pressionada </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0be44243f30672c846deedaf6b3660f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +195,7 @@ Funções</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Gerado em Segunda, 15 de Maio de 2017 21:15:31 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
+Gerado em Sexta, 19 de Maio de 2017 16:15:30 para Laboratorio 6 por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -12,7 +12,9 @@ var indexSectionsWithContent =
   2: "abflmpt",
   3: "abcdegilmoprstv~",
   4: "o",
-  5: "l"
+  5: "o",
+  6: "i",
+  7: "l"
 };
 
 var indexSectionNames =
@@ -21,8 +23,10 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "related",
-  5: "pages"
+  4: "variables",
+  5: "related",
+  6: "defines",
+  7: "pages"
 };
 
 function convertToId(search)

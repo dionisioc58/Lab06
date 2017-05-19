@@ -26,4 +26,16 @@
     */
     int showMenu();
 
+    /**
+    * @brief     Função que configura a entrada padrão para as funções do menu
+    * @param[in] liga True para ativar as funções de seleção do menu
+    */
+    void configura(bool liga);
+
+    /**
+    * @brief  Função que captura a entrada de dados
+    * @return Retorna o número da tecla pressionada
+    */
+    int movimenta();
+
 #endif

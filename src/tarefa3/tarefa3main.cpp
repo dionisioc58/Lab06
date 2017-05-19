@@ -29,6 +29,7 @@ int main(int argc, char* argv[]) {
     while(1) {
         switch(showMenu()) { //Exibir o menu
             case 0:             //Sair
+                cout << endl;
                 delete[] tur;
                 return 0;
                 break;
@@ -71,7 +72,7 @@ int main(int argc, char* argv[]) {
                 break;
         }
     }
- 
+    cout << endl;
     delete[] tur;
     return 0;
 }
